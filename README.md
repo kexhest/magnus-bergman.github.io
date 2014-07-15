@@ -1,4 +1,4 @@
-magnus.github.io
+magnus-bergman.github.io
 ================
 
 personal page
