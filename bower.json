@@ -1,0 +1,9 @@
+{
+	"name": "magnus-bergman.github.io",
+	"private": true,
+	"dependencies": {},
+	"devDependencies": {
+		"normalize-scss": "~3.0.1",
+		"susy": "~2.1.3"
+	}
+}

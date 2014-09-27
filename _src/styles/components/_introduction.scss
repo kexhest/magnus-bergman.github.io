@@ -1,0 +1,26 @@
+.introduction {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 30em;
+  height: 30em;
+
+  padding: 1em;
+  text-align: center;
+
+  transform: translate(-50%, -50%);
+
+  border-radius: 100%;
+  background: rgba($contrast-color, .6);
+
+  article {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+
+  h1 { white-space: nowrap; }
+}

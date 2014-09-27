@@ -1,0 +1,18 @@
+gems:
+  - jekyll-sitemap
+
+timezone: Europe/Stockholm
+exclude: [node_modules, bower_components, _src, bower.json, package.json, gulp, gulpfile.js, Gemfile, Gemfile.lock, LICENSE, README.md]
+
+baseUrl: "/"
+url: "http://magnus.sexy"
+
+permalink: /:title
+
+author: Magnus Bergman
+email: karlmagnusbergman@gmail.com
+
+twitter: mgnsbrgmn
+
+sass:
+  style: :compressed

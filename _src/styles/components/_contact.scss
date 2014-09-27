@@ -1,0 +1,19 @@
+.contact {
+  @include span(8 of 12);
+  @include squish(2);
+  ul {
+    @extend %reset-list;
+    @extend %clearfix;
+  }
+
+  li {
+    @include span(4 of 12);
+    @include pad(1);
+  }
+
+  svg {
+    width: 100%;
+    fill: $base-color;
+    // height: 100%;
+  }
+}
