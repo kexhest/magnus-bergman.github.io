@@ -1,0 +1,37 @@
+.introduction {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 30em;
+  height: 30em;
+
+  padding: 1em;
+  text-align: center;
+
+  user-select: none;
+
+  border-radius: 100%;
+  background: rgba($contrast-color, .8);
+
+  transform: translate(-50%, -50%);
+
+  @include breakpoint(30em) {
+    width: 18em;
+    height: 18em;
+  }
+
+  article {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+
+  h1 {
+    white-space: nowrap;
+
+    @include breakpoint(30em) { font-size: 1.3em; }
+  }
+}

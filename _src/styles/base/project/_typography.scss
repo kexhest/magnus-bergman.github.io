@@ -4,12 +4,18 @@ body {
   font-weight: $base-font-weight;
   line-height: $base-line-height;
   color: $base-color;
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smooth: always;
 }
 
 h1 {
+  font-family: $base-font-family;
   font-weight: $base-font-weight;
 }
+
+p {
+  font-family: $script-font-family;
+  font-size: 1.6em;
+  margin: 0;
+}
+
+em { font-style: italic; }
+strong { font-weight: 400; }

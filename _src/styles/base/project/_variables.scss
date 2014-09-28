@@ -5,11 +5,16 @@ $path-images: '../images/';
 $path-icons: $path-images + 'icons/';
 
 // Typography
-$base-font-family: 'Helvetica Neue', 'Arial', sans-serif;
+$base-font-family: 'Helvetica Neue', Arial, sans-serif;
+$script-font-family: Pacifico, Georgia, serif;
 $base-font-size: 16px;
 $base-font-weight: 300;
 $base-line-height: 1.4;
 
 // Project Colors
-$base-color: #fff;
-$contrast-color: #000;
+$base-color: #000;
+$contrast-color: #fff;
+
+$twitter-color: #2b7bb9;
+$github-color: #4183c4;
+$email-color: #F012BE;

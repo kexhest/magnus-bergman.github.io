@@ -1,16 +1,7 @@
 @charset 'UTF-8';
 
-// Init
 @import 'normalize-scss/normalize';
-
-// Variables, fonts, mixins, helpers... common styles used across the entire site
-@import 'base/__base';
-
-// Susy
 @import 'susy/sass/susy';
 
-// Components (reusable/framework components)
-@import 'components/__components';
-
-// Specifics (more specific declarations, may be built on a per page basis)
+@import 'base/__base';
 @import 'specifics/__specifics';

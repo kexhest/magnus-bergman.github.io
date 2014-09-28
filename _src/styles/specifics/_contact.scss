@@ -18,9 +18,9 @@
     &:hover svg { transform: scale(1.1); }
   }
 
-  .twitter:hover svg { fill: #2b7bb9; }
-  .github:hover svg { fill: #4183c4; }
-  .email:hover svg { fill: #F012BE; }
+  .twitter:hover svg { fill: $twitter-color; }
+  .github:hover svg { fill: $github-color; }
+  .email:hover svg { fill: $email-color; }
 
   svg {
     width: 100%;
@@ -29,7 +29,6 @@
     transform: scale(1);
 
     will-change: fill, transform;
-
     transition: fill 150ms ease-out, transform 150ms ease-out;
   }
 }
