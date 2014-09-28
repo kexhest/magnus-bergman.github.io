@@ -14,6 +14,9 @@
   svg {
     width: 100%;
     fill: $base-color;
-    // height: 100%;
+
+    transition: fill 400ms ease;
+
+    &:hover { fill: #F012BE; }
   }
 }
