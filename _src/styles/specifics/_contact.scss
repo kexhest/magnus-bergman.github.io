@@ -1,6 +1,5 @@
 .contact {
-  @include span(8 of 12);
-  @include squish(2);
+  @include container(60%);
 
   ul {
     @extend %reset-list;
@@ -24,6 +23,8 @@
 
   svg {
     width: 100%;
+    height: 100%;
+
     fill: $base-color;
 
     transform: scale(1);
