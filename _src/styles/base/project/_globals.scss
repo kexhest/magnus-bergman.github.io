@@ -17,4 +17,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+
+  will-change: background-image;
+  transition: background-image 2s linear;
 }

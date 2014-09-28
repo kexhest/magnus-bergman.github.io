@@ -16,6 +16,13 @@ var images = [
   '29/night-square.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=e53bc6735bc7131d71878d5bb0ff8bfb'
 ];
 
-var randIndex = Math.floor(Math.random() * images.length);
+var image;
 
-document.body.style.backgroundImage = 'url(\'//unsplash.imgix.net/' + images[randIndex] + '\')';
+function updateBg() {
+  image = 'url(\'//unsplash.imgix.net/' + images[Math.floor(Math.random() * images.length)] + '\')';
+  document.body.style.backgroundImage = image;
+}
+
+updateBg();
+
+var orbit = window.setInterval(updateBg, 20000);
