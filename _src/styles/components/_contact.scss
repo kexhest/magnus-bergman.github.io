@@ -1,6 +1,7 @@
 .contact {
   @include span(8 of 12);
   @include squish(2);
+
   ul {
     @extend %reset-list;
     @extend %clearfix;
@@ -11,12 +12,24 @@
     @include pad(1);
   }
 
+  a {
+    transform-style: preserve-3d;
+
+    &:hover svg { transform: scale(1.1); }
+  }
+
+  .twitter:hover svg { fill: #2b7bb9; }
+  .github:hover svg { fill: #4183c4; }
+  .email:hover svg { fill: #F012BE; }
+
   svg {
     width: 100%;
     fill: $base-color;
 
-    transition: fill 400ms ease;
+    transform: scale(1);
 
-    &:hover { fill: #F012BE; }
+    will-change: fill, transform;
+
+    transition: fill 150ms ease-out, transform 150ms ease-out;
   }
 }
