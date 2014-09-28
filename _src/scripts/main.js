@@ -18,11 +18,11 @@ var images = [
 
 var image;
 
-function updateBg() {
-  image = 'url(\'//unsplash.imgix.net/' + images[Math.floor(Math.random() * images.length)] + '\')';
-  document.body.style.backgroundImage = image;
+function refresh() {
+  image = images[Math.floor(Math.random() * images.length)];
+  document.body.style.backgroundImage = 'url(\'//unsplash.imgix.net/' + image + '\')';
 }
 
-updateBg();
+refresh();
 
-var orbit = window.setInterval(updateBg, 20000);
+var orbit = window.setInterval(refresh, 20000);
