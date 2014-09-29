@@ -25,4 +25,4 @@ function refresh() {
 
 refresh();
 
-var orbit = window.setInterval(refresh, 20000);
+// var orbit = window.setInterval(refresh, 20000);
