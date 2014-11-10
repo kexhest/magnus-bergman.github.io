@@ -3,8 +3,8 @@
   top: 50%;
   left: 50%;
 
-  width: 30em;
-  height: 30em;
+  width: 18em;
+  height: 18em;
 
   padding: 1em;
   text-align: center;
@@ -16,9 +16,9 @@
 
   transform: translate(-50%, -50%);
 
-  @include breakpoint(30em) {
-    width: 18em;
-    height: 18em;
+  @media (min-width: 28em) {
+    width: 30em;
+    height: 30em;
   }
 
   article {
@@ -31,7 +31,8 @@
 
   h1 {
     white-space: nowrap;
+    font-size: 1.3em;
 
-    @include breakpoint(30em) { font-size: 1.3em; }
+    @media (min-width: 28em) { font-size: 2em; }
   }
 }

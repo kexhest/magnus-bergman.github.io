@@ -1,6 +1,9 @@
+'use strict';
+
 var gulp = require('gulp');
-var changed = require('gulp-changed');
 var imagemin = require('gulp-imagemin');
+var pngcrush = require('imagemin-pngcrush');
+var changed = require('gulp-changed');
 
 gulp.task('images', function() {
   var dest = './assets/images';
@@ -8,9 +11,9 @@ gulp.task('images', function() {
   return gulp.src('./_src/images/**')
     .pipe(changed(dest))
     .pipe(imagemin({
-      optimizationLevel: 3,
       progressive: true,
-      interlaced: true
+      svgoPlugins: [{removeViewBox: false}],
+      use: [pngcrush()]
     }))
     .pipe(gulp.dest(dest));
 });

@@ -1,5 +1,7 @@
 .contact {
-  @include container(60%);
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 
   ul {
     @extend %reset-list;
@@ -7,8 +9,10 @@
   }
 
   li {
-    @include span(4 of 12);
-    @include pad(1);
+    width: 33.333%;
+    float: left;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
   a {

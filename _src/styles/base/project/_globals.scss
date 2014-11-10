@@ -14,10 +14,12 @@ body {
 }
 
 body {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
 
-  // will-change: background-image;
-  // transition: background-image 2s linear;
+	background-image: url('#{$path-images}bg-small.jpg');
+
+	@media (min-width: 40em) { background-image: url('#{$path-images}bg.jpg'); }
+	@media (min-width: 90em) { background-image: url('#{$path-images}bg-large.jpg'); }
 }
