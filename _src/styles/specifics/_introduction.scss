@@ -3,6 +3,8 @@
   top: 50%;
   left: 50%;
 
+  display: table;
+
   width: 18em;
   height: 18em;
 
@@ -22,11 +24,8 @@
   }
 
   article {
-    position: relative;
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
+    display: table-cell;
+    vertical-align: middle;
   }
 
   h1 {

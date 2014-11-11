@@ -23,3 +23,5 @@ body {
 	@media (min-width: 40em) { background-image: url('#{$path-images}bg.jpg'); }
 	@media (min-width: 90em) { background-image: url('#{$path-images}bg-large.jpg'); }
 }
+
+canvas { display: block; }
